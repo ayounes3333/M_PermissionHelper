@@ -52,13 +52,11 @@ public abstract class PermissionsHelper {
 
                 showExplanationAsync show = new showExplanationAsync(context , Explanation);
                 show.execute();
-                Toast.makeText(context, "yeey!", Toast.LENGTH_LONG).show();
             } else {
 
                 // No explanation needed, we can request the permission.
 
                 ActivityCompat.requestPermissions(context, new String[]{Permission}, REQUEST_CODE);
-                Toast.makeText(context, "Haa!", Toast.LENGTH_LONG).show();
                 // REQUEST_CODE is an
                 // app-defined int constant. The callback method gets the
                 // result of the request.
